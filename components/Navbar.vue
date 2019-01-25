@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark app-navbar mb-3">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark app-navbar mb-3">
     <div class="container">
       <nuxt-link
         class="navbar-brand"
@@ -110,5 +110,4 @@
     max-height: 0;
     opacity: 0;
   }
-
 </style>
