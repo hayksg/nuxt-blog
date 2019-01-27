@@ -1,0 +1,64 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 100px; /* Margin bottom by footer height */
+    padding-top: 100px;
+    background-position: left 70px;
+    background-repeat: repeat-x;
+    background-image: url('~assets/images/gradient_bg.png');
+    background-attachment: fixed;
+}
+
+.app-main-container {
+    margin-bottom: 200px;
+}
+
+h1 {
+    font-family: 'Charm', cursive;
+    height: 2rem;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);
+}
+
+.page-title {
+    margin-bottom: 30px;
+}
+
+a.nuxt-link-exact-active {
+    color: #fff !important;
+}
+
+.main-enter-active, .main-leave-active {
+    transform: translateY(0);
+    transition: all .5s linear;
+}
+
+.main-enter, .main-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+button.app-button-to-top {
+    position: fixed;
+    bottom: 24px;
+    left: 0;
+    opacity: 0;
+    padding: 0 12px 4px;
+    background-color: #563d7c;
+    color: #fff;
+    border: 1px solid #3e2c5a;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+button.app-button-to-top:hover,
+button.app-button-to-top:focus {
+    background-color: #3e2c5a;
+    outline: none;
+}
