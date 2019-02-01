@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Navbar />
+    <TheHeader />
     <div class="container app-main-container">
       <transition name="main">
         <nuxt/>
       </transition>
     </div>
-    <Footer />
+    <TheFooter />
     <button
       ref="scrollTopButton"
       class="app-button-to-top"
@@ -18,13 +18,13 @@
 </template>
 
 <script>
-  import Navbar from '~/components/Navbar';
-  import Footer from '~/components/Footer';
+  import TheHeader from '~/components/Navigation/TheHeader';
+  import TheFooter from '~/components/Navigation/TheFooter';
 
   export default {
     components: {
-      Navbar,
-      Footer
+      TheHeader,
+      TheFooter
     },
     mounted () {
       window.addEventListener("scroll", this.appScrollEvent);

@@ -24,21 +24,31 @@
           class="collapse navbar-collapse show"
         >
           <ul class="navbar-nav">
+
             <li class="nav-item active">
               <nuxt-link
                 class="nav-link"
                 to="/posts"
-              >Posts <span class="sr-only">(current)</span>
+              >Posts
               </nuxt-link>
             </li>
+
             <li class="nav-item active">
               <nuxt-link
                 class="nav-link"
                 to="/about"
-                nuxt-link-active="active"
-              >About <span class="sr-only">(current)</span>
+              >About
               </nuxt-link>
             </li>
+
+            <li class="nav-item active">
+              <nuxt-link
+                class="nav-link"
+                to="/admin"
+              >Admin
+              </nuxt-link>
+            </li>
+
           </ul>
         </div>
       </transition>
