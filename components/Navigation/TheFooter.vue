@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <div class="text-muted">&copy; Copyright {{ year }} | Created by Hayk.</div>
+      <div class="app-footer-text">&copy; Copyright {{ year }} | Created by Hayk.</div>
     </div>
   </footer>
 </template>
@@ -30,6 +30,10 @@
     div {
       margin: auto;
       text-align: center;
+
+      div.app-footer-text {
+        color: #cbbde2;
+      }
     }
   }
 </style>
