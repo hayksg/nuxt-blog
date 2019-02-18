@@ -16,7 +16,10 @@
 
 <script>
   export default {
-
+    mounted () {
+      // to make transition work good on the page
+      window.scrollTo(0, 0)
+    }
   }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="'/posts/' + id"
+    :to="postLink"
     class="app-post-link-wrap"
   >
     <article class="post-preview">
@@ -26,6 +26,10 @@
         type: String,
         required: true
       },
+      isAdmin: {
+        type: Boolean,
+        required: true
+      },
       title: {
         type: String,
         required: true
@@ -37,6 +41,11 @@
       thumbnail: {
         type: String,
         required: true
+      }
+    },
+    computed: {
+      postLink() {
+        return this.isAdmin ? '/admin/' + this.id : '/posts/' + this.id;
       }
     }
   }
